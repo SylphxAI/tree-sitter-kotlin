@@ -9,6 +9,10 @@ on:
     paths:
       - grammar.js
 
+# Least privilege: jobs that need more request it explicitly.
+permissions:
+  contents: read
+
 jobs:
   lint:
     runs-on: ubuntu-latest

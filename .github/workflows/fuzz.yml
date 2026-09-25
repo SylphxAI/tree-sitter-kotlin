@@ -9,6 +9,10 @@ on:
     paths:
       - src/scanner.c
 
+# Least privilege: jobs that need more request it explicitly.
+permissions:
+  contents: read
+
 jobs:
   fuzz:
     runs-on: ubuntu-latest
